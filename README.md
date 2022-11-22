@@ -2,6 +2,8 @@
 
 This is a sample go plugin project to demonstrate how  a plugin based project is structured.
 
+Upstream golang plugin documentation: https://pkg.go.dev/plugin
+
 ## Structure
 
 * `pkg`: contains the plugin library that loads and runs a loded pluign;
