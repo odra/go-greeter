@@ -7,6 +7,9 @@ build/plugins:
 build/bin:
 	@go build -o build/greet bin/greet.go
 
+build/clean:
+	@rm -rf ./build/
+
 build: build/plugins build/bin
 
-.PHONY: build/plugins build/bin build
+.PHONY: build/plugins build/bin build/clean build
