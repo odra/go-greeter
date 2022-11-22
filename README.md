@@ -18,6 +18,19 @@ Plugins are built as `.so` files and loaded with the `plugin` package.
 All plugins should implement the `Greeter` interface and have a `Build` function that creates a new instance
 of a struct that implements that interface.
 
+## Building and Running
+
+You can run `make build` and everything will be built within the `build` folder.
+
+That will build all plugins, plugin library and cli.
+
+Run it by executing `./build/greet $LANG` available values for `$LANG` are:
+
+* en
+* ptbr
+
+The program will panic in case other values are used since a plugin file won't be found for other langs/values.
+
 ## LICENSE
 
 [MIT](./LICENSE)
